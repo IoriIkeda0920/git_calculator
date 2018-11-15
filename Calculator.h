@@ -4,11 +4,14 @@
 class Calculator
 {
     public:
-        int m_a=0;
-        int m_b=3;
+        int m_a;
+        int m_b;
     
     public:
         int sum();
+        int sub();
+        int mult();
+        double div();
 
 };
 
