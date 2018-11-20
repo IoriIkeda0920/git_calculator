@@ -5,19 +5,23 @@ using namespace std;
 
 int main () 
 {
-    Calculator calc;
+    int a=0 , b=0;
 
     cout << "Please enter an integer a:" ;
-    cin >> calc.m_a;
+    cin >> a;
      cout << "Please enter an integer b:";
-    cin >> calc.m_b;
+    cin >> b;
 
-    cout << "a=" << calc.m_a <<",b=" << calc.m_b << endl;
+    Calculator *calc;
 
-    cout << "a+b=" << calc.sum() << endl;
-    cout << "a-b=" << calc.sub() << endl;
-    cout << "a*b=" << calc.mult() << endl;
-    cout << "a/b=" << calc.div() << endl;
+    calc = new Calculator(a,b);
+
+    cout << "a=" << a <<",b=" << b << endl;
+
+    cout << "a+b=" << calc->sum() << endl;
+    cout << "a-b=" << calc->sub() << endl;
+    cout << "a*b=" << calc->mult() << endl;
+    cout << "a/b=" << calc->div() << endl;
 
     return 0;
 }

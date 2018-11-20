@@ -3,11 +3,12 @@
 
 class Calculator
 {
-    public:
+    private:
         int m_a;
         int m_b;
     
     public:
+        Calculator(int a,int b);
         int sum();
         int sub();
         int mult();

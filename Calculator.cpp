@@ -1,5 +1,12 @@
+#include <iostream>
 #include "Calculator.h"
 
+using namespace std;
+
+Calculator::Calculator(int a, int b): m_a(a), m_b(b)
+{
+    cout << "create"<<endl;
+}
 
 int Calculator::sum()
 {
